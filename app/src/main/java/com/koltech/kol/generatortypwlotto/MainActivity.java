@@ -1,14 +1,12 @@
 package com.koltech.kol.generatortypwlotto;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-
-import org.w3c.dom.Text;
 
 import java.util.Random;
 
