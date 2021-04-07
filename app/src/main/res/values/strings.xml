@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">Generator typów lotto</string>
+    <string name="app_name">Lotto types generator</string>
+    <string name="pop_up_zamykanie">Press again to close.</string>
+    <string name="losuj">Randomize</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="menu_loto">
+        <item>6 liczb</item>
+        <item>7 liczb</item>
+        <item>8 liczb</item>
+        <item>9 liczb</item>
+        <item>10 liczb</item>
+        <item>11 liczb</item>
+        <item>12 liczb</item>
+    </string-array>
+    <string-array name="menu_multi">
+        <item>6 liczb</item>
+        <item>7 liczb</item>
+        <item>8 liczb</item>
+        <item>9 liczb</item>
+        <item>10 liczb</item>
+    </string-array>
 </resources>

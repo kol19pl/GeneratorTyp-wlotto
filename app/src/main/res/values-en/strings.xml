@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lotto types generator</string>
+    <string name="pop_up_zamykanie">Press again to close.</string>
+    <string name="losuj">Randomize</string>
+</resources>

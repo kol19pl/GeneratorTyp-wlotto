@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainMenuFragment">
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.koltech.kol.generatortypwlotto.MainMenuFragment"
+        android:label="MainMenuFragment" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_ekstraPensjaFragment"
+            app:destination="@id/ekstraPensjaFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_euroJackpotFragment"
+            app:destination="@id/euroJackpotFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_kenoFragment"
+            app:destination="@id/kenoFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_lootoFragment"
+            app:destination="@id/lootoFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_miniLottoFragment"
+            app:destination="@id/miniLottoFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_multiMultiFragment"
+            app:destination="@id/multiMultiFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_szybkieFragment"
+            app:destination="@id/szybkieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ekstraPensjaFragment"
+        android:name="com.koltech.kol.generatortypwlotto.EkstraPensjaFragment"
+        android:label="EkstraPensjaFragment" >
+        <action
+            android:id="@+id/action_ekstraPensjaFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/euroJackpotFragment"
+        android:name="com.koltech.kol.generatortypwlotto.EuroJackpotFragment"
+        android:label="EuroJackpotFragment" >
+        <action
+            android:id="@+id/action_euroJackpotFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kenoFragment"
+        android:name="com.koltech.kol.generatortypwlotto.KenoFragment"
+        android:label="KenoFragment" >
+        <action
+            android:id="@+id/action_kenoFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lootoFragment"
+        android:name="com.koltech.kol.generatortypwlotto.LootoFragment"
+        android:label="LootoFragment" >
+        <action
+            android:id="@+id/action_lootoFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/miniLottoFragment"
+        android:name="com.koltech.kol.generatortypwlotto.MiniLottoFragment"
+        android:label="MiniLottoFragment" >
+        <action
+            android:id="@+id/action_miniLottoFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/multiMultiFragment"
+        android:name="com.koltech.kol.generatortypwlotto.MultiMultiFragment"
+        android:label="MultiMultiFragment" >
+        <action
+            android:id="@+id/action_multiMultiFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/szybkieFragment"
+        android:name="com.koltech.kol.generatortypwlotto.SzybkieFragment"
+        android:label="SzybkieFragment" >
+        <action
+            android:id="@+id/action_szybkieFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+</navigation>

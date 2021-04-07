@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Generator typów lotto</string>
+    <string name="pop_up_zamykanie">Naciśnij jeszcze raz, aby zamknąć.</string>
+    <string name="losuj">Losuj</string>
+</resources>
