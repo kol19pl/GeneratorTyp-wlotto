@@ -44,19 +44,23 @@ public class MainActivity extends AppCompatActivity {
             public void onInitializationComplete(InitializationStatus initializationStatus) {}
         });
 
+        adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
         // MobileAds.setRequestConfiguration(
           //     new RequestConfiguration.Builder().setTestDeviceIds(Arrays.asList("ABCDEF012345")).build());
 
 
         // Since we're loading the banner based on the adContainerView size, we need to wait until this
         // view is laid out before we can get the width.
-        adContainerView = findViewById(R.id.adContainer);
-        adContainerView.post(new Runnable() {
-           @Override
-            public void run() {
-                loadBanner();
-            }
-        });
+   //     adContainerView = findViewById(R.id.adContainer);
+   //     adContainerView.post(new Runnable() {
+   //        @Override
+   //         public void run() {
+   //             loadBanner();
+   //         }
+   //     });
     }
 
 
@@ -96,41 +100,41 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
-    private void loadBanner() {
+ //   private void loadBanner() {
         // Create an ad request.
-        adView = new AdView(this);
-        adView.setAdUnitId(AD_UNIT_ID);
-        adContainerView.removeAllViews();
-        adContainerView.addView(adView);
+  //      adView = new AdView(this);
+  //      adView.setAdUnitId(AD_UNIT_ID);
+ //       adContainerView.removeAllViews();
+ //       adContainerView.addView(adView);
 
-        AdSize adSize = getAdSize();
-        adView.setAdSize(adSize);
+ //       AdSize adSize = getAdSize();
+  //      adView.setAdSize(adSize);
 
-        AdRequest adRequest = new AdRequest.Builder().build();
+ //       AdRequest adRequest = new AdRequest.Builder().build();
 
         // Start loading the ad in the background.
-        adView.loadAd(adRequest);
-    }
+  //      adView.loadAd(adRequest);
+  //  }
 
-    private AdSize getAdSize() {
-        // Determine the screen width (less decorations) to use for the ad width.
-        Display display = getWindowManager().getDefaultDisplay();
-        DisplayMetrics outMetrics = new DisplayMetrics();
-        display.getMetrics(outMetrics);
+   // private AdSize getAdSize() {
+   //     // Determine the screen width (less decorations) to use for the ad width.
+   //     Display display = getWindowManager().getDefaultDisplay();
+   //     DisplayMetrics outMetrics = new DisplayMetrics();
+   //     display.getMetrics(outMetrics);
 
-        float density = outMetrics.density;
+   //     float density = outMetrics.density;
 
-        float adWidthPixels = adContainerView.getWidth();
+   //     float adWidthPixels = adContainerView.getWidth();
 
         // If the ad hasn't been laid out, default to the full screen width.
-        if (adWidthPixels == 0) {
-            adWidthPixels = outMetrics.widthPixels;
-        }
+  //      if (adWidthPixels == 0) {
+   //         adWidthPixels = outMetrics.widthPixels;
+   //     }
 
-        int adWidth = (int) (adWidthPixels / density);
+   //     int adWidth = (int) (adWidthPixels / density);
 
-        return AdSize.getCurrentOrientationBannerAdSizeWithWidth(this, adWidth);
-    }
+  //      return AdSize.getCurrentOrientationInlineAdaptiveBannerAdSize(this, 320);
+  //  }
 
 
 
