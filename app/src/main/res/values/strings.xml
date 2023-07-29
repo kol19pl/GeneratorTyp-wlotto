@@ -29,6 +29,25 @@
 
     <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
     <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
-    <string name="splash_activity_text">null</string>
+    <string name="splash_activity_text" translatable="false">null</string>
     <string name="splash_activity_image_text">null</string>
+    <string name="x">X</string>
+    <string name="xx">XX</string>
+    <string name="wybierz_ile_liczb_chcesz_wytypowa">Choose how many numbers you want to bet</string>
+    <string name="sprawdz_wyniki">Sprawdz Wyniki</string>
+
+    <string-array name="games_array">
+        <item>Lotto</item>
+        <item>Eurojackpot</item>
+        <item>MultiMulti</item>
+        <item>MiniLotto</item>
+        <item>Keno</item>
+        <item>Szybkie600</item>
+        <item>Kaskada</item>
+        <item>EkstraPremia</item>
+        <item>EkstraPensja</item>
+        <!-- Dodaj więcej gier, jeśli potrzeba -->
+    </string-array>
+
+
 </resources>

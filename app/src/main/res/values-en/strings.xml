@@ -3,4 +3,7 @@
     <string name="app_name">Lotto types generator</string>
     <string name="pop_up_zamykanie">Press again to close.</string>
     <string name="losuj">Randomize</string>
+    <string name="x">X</string>
+    <string name="xx">XX</string>
+    <string name="wybierz_ile_liczb_chcesz_wytypowa">Choose how many numbers you want to bet</string>
 </resources>

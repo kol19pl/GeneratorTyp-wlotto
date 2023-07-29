@@ -29,6 +29,9 @@
         <action
             android:id="@+id/action_mainMenuFragment_to_szybkieFragment"
             app:destination="@id/szybkieFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_sprawdzWyniki"
+            app:destination="@id/sprawdzWyniki" />
     </fragment>
     <fragment
         android:id="@+id/ekstraPensjaFragment"
@@ -84,6 +87,15 @@
         android:label="SzybkieFragment" >
         <action
             android:id="@+id/action_szybkieFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sprawdzWyniki"
+        android:name="com.koltech.kol.generatortypwlotto.SprawdzWyniki"
+        android:label="fragment_sprawdz_wyniki"
+        tools:layout="@layout/fragment_sprawdz_wyniki" >
+        <action
+            android:id="@+id/action_sprawdzWyniki_to_mainMenuFragment"
             app:destination="@id/mainMenuFragment" />
     </fragment>
 </navigation>

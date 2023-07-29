@@ -22,7 +22,7 @@ import android.util.Log;
 import android.widget.TextView;
 
 
-import com.koltech.kol.generatortypwlotto.databinding.ActivitySplashBinding;
+
 
 /** Splash Activity that inflates splash activity xml. */
 public class SplashActivity extends AppCompatActivity {

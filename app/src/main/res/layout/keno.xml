@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:scrollbarSize="10dp">
 
     <TableLayout
         android:id="@+id/tableLayout"
@@ -14,7 +16,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
         app:layout_constraintVertical_bias="0.22000003">
 
 
@@ -29,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/select_button"
-                android:text="XX"
+                android:text="@string/xx"
                 android:textAlignment="center"
                 android:textSize="36sp"
                 android:textStyle="bold" />
@@ -40,7 +42,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
                 android:background="@drawable/select_button"
-                android:text="XX"
+                android:text="@string/xx"
                 android:textAlignment="center"
                 android:textSize="36sp"
                 android:textStyle="bold" />
@@ -51,7 +53,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
                 android:background="@drawable/select_button"
-                android:text="XX"
+                android:text="@string/xx"
                 android:textAlignment="center"
                 android:textSize="36sp"
                 android:textStyle="bold" />
@@ -62,7 +64,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
                 android:background="@drawable/select_button"
-                android:text="XX"
+                android:text="@string/xx"
                 android:textAlignment="center"
                 android:textSize="36sp"
                 android:textStyle="bold" />
@@ -73,7 +75,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
                 android:background="@drawable/select_button"
-                android:text="XX"
+                android:text="@string/xx"
                 android:textAlignment="center"
                 android:textSize="36sp"
                 android:textStyle="bold" />
@@ -92,7 +94,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:background="@drawable/select_button"
-                android:text="XX"
+                android:text="@string/xx"
                 android:textAlignment="center"
                 android:textSize="36sp"
                 android:textStyle="bold" />
@@ -103,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:background="@drawable/select_button"
-                android:text="XX"
+                android:text="@string/xx"
                 android:textAlignment="center"
                 android:textSize="36sp"
                 android:textStyle="bold" />
@@ -114,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:background="@drawable/select_button"
-                android:text="XX"
+                android:text="@string/xx"
                 android:textAlignment="center"
                 android:textSize="36sp"
                 android:textStyle="bold" />
@@ -125,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:background="@drawable/select_button"
-                android:text="XX"
+                android:text="@string/xx"
                 android:textAlignment="center"
                 android:textSize="36sp"
                 android:textStyle="bold" />
@@ -136,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:background="@drawable/select_button"
-                android:text="XX"
+                android:text="@string/xx"
                 android:textAlignment="center"
                 android:textSize="36sp"
                 android:textStyle="bold" />
@@ -159,6 +161,48 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="295dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:max="10"
+        android:progress="10"
+        android:progressDrawable="@drawable/seekbar"
+        android:scrollbarSize="30dp"
+
+        android:scrollbarStyle="insideOverlay"
+        android:splitTrack="false"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIlośćLiczb" />
+
+    <TextView
+        android:id="@+id/textViewIlośćliczb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/wybierz_ile_liczb_chcesz_wytypowa"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_on_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewIlośćLiczb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="10"
+        android:textColor="@color/design_default_color_on_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIlośćliczb" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

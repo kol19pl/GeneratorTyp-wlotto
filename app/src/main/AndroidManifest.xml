@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.koltech.kol.generatortypwlotto">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <dist:module dist:instant="true" />
 
@@ -24,7 +23,7 @@
             android:value="ca-app-pub-4834003578511022~9055069344" />
 
         <activity
-            android:name=".SplashActivity"
+            android:name=".MainActivity"
             android:exported="true"
             android:noHistory="true"
             android:screenOrientation="portrait"
@@ -37,7 +36,7 @@
         </activity>
 
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait">
         </activity>

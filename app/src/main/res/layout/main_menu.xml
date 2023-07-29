@@ -97,6 +97,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonEkstra" />
 
+    <Button
+        android:id="@+id/buttonsprawdz"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/select_button"
+        android:text="@string/sprawdz_wyniki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonmini" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

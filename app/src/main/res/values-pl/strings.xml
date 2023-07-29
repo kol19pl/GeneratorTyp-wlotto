@@ -3,4 +3,8 @@
     <string name="app_name">Generator typów lotto</string>
     <string name="pop_up_zamykanie">Naciśnij jeszcze raz, aby zamknąć.</string>
     <string name="losuj">Losuj</string>
+    <string name="wybierz_ile_liczb_chcesz_wytypowa">Wybierz, ile liczb chcesz wytypować</string>
+    <string name="x">X</string>
+    <string name="xx">XX</string>
+    <string name="sprawdz_wyniki">Sprawdz Wyniki</string>
 </resources>

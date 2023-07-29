@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 32
+    compileSdkVersion 33
     defaultConfig {
         applicationId "com.koltech.kol.generatortypwlotto"
         minSdkVersion 19
-        targetSdkVersion 32
-        versionCode 8
-        versionName "1.7"
+        targetSdkVersion 33
+        versionCode 10
+        versionName "1.9"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -20,19 +20,22 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'com.koltech.kol.generatortypwlotto'
+    buildToolsVersion '34.0.0'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.navigation:navigation-fragment:2.5.0'
+    implementation 'androidx.navigation:navigation-fragment:2.6.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.lifecycle:lifecycle-process:2.5.0'
-    implementation 'com.google.android.material:material:1.6.1'
-    implementation 'androidx.navigation:navigation-ui:2.5.0'
+    implementation 'androidx.lifecycle:lifecycle-process:2.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.navigation:navigation-ui:2.6.0'
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test:runner:1.4.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-    implementation 'com.google.android.gms:play-services-ads:21.0.0'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.google.android.gms:play-services-ads:22.2.0'
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
 }

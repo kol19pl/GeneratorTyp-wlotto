@@ -81,6 +81,14 @@ public class MainMenuFragment extends Fragment {
             }
         });
 
+        view.findViewById(R.id.buttonsprawdz).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(MainMenuFragment.this)
+                        .navigate(R.id.action_mainMenuFragment_to_sprawdzWyniki);
+            }
+        });
+
 
 
 

@@ -170,7 +170,7 @@ public class MiniLottoFragment extends Fragment implements AdapterView.OnItemSel
      */
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        Liczbalosowan = 6+position;
+        //Liczbalosowan = 6+position;
     }
 
     /**
