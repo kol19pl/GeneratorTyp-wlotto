@@ -23,22 +23,24 @@
             android:value="ca-app-pub-4834003578511022~9055069344" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
+
             android:exported="true"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme" >
+
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".SplashActivity"
-            android:exported="true"
-            android:screenOrientation="portrait">
         </activity>
     </application>
 
