@@ -6,8 +6,8 @@ android {
         applicationId "com.koltech.kol.generatortypwlotto"
         minSdkVersion 19
         targetSdkVersion 34
-        versionCode 12
-        versionName "2.1"
+        versionCode 14
+        versionName "2.2"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -21,7 +21,7 @@ android {
         viewBinding true
     }
     namespace 'com.koltech.kol.generatortypwlotto'
-    buildToolsVersion '33.0.1'
+    buildToolsVersion '34'
 }
 
 dependencies {
