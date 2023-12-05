@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -67,7 +66,7 @@ public class KenoFragment extends Fragment {
 
 
         seekBar = (SeekBar) view.findViewById(R.id.seekBar);
-        iloscliczb = (TextView) view.findViewById(R.id.textViewIlośćLiczb);
+        iloscliczb = (TextView) view.findViewById(R.id.textViewIloscLiczb);
 
         Randomize.setOnClickListener(v -> {
             //if (seekBar.getProgress() != null)

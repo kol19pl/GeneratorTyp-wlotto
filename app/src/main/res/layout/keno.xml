@@ -180,10 +180,10 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewIlośćLiczb" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewIloscLiczb" />
 
     <TextView
-        android:id="@+id/textViewIlośćliczb"
+        android:id="@+id/textViewIloscliczb"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/wybierz_ile_liczb_chcesz_wytypowa"
@@ -194,7 +194,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewIlośćLiczb"
+        android:id="@+id/textViewIloscLiczb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -202,7 +202,7 @@
         android:textColor="@color/design_default_color_on_secondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewIlośćliczb" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewIloscliczb" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
